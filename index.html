@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger POS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <h1>BURGER SHOP-POS System</h1>
+      
+      <div class="search-container">
+        <input type="text" id="menu-search" placeholder="Type here to search...">
+      </div>
+      
+      <div class="category-tabs">
+        <button class="tab active" data-category="all">All Items</button>
+        <button class="tab" data-category="burgers">Burgers</button>
+        <button class="tab" data-category="drinks">Drinks</button>
+      </div>
+      
+      <div class="menu-section">
+        <h2>Burgers <span class="item-count" id="burger-count">(16 items)</span></h2>
+        <div id="burgers-menu" class="menu-container">
+          <!-- Burgers will be added here -->
+        </div>
+      </div>
+      
+      <div class="menu-section">
+        <h2>Drinks <span class="item-count" id="drink-count">(8 items)</span></h2>
+        <div id="drinks-menu" class="menu-container">
+          <!-- drinks will be added here -->
+        </div>
+      </div>
+    </div>
+
+    <div id="cart">
+      <h2>Cart <span id="cart-count">(0)</span></h2>
+      <ul id="cart-items"></ul>
+      <textarea id="order-notes" placeholder="Any special instructions?"></textarea>
+      <p>Total: Rs. <span id="total">0.00</span></p>
+      <button id="checkout">Checkout</button>
+      <button id="admin-toggle">Admin</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
